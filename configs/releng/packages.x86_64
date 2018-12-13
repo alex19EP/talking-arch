@@ -78,3 +78,5 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+espeakup
+alsa-utils
