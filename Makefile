@@ -14,3 +14,4 @@ install: all
 	install -D -m 644 README.md $(DESTDIR)/usr/share/doc/talkingarch/README
 	install -Dm644 pick-a-card.wav $(DESTDIR)$(SOUNDS_DIR)/pick-a-card.wav
 	install -Dm644 beep.wav $(DESTDIR)$(SOUNDS_DIR)/beep.wav
+
