@@ -1,5 +1,5 @@
 # This Makefile only installs the TalkingArch README and configuration.
-SOUNDS_DIR=/usr/share/talkingarch/configs/talking-inst/airootfs/usr/share/livecd-sound/sounds
+SOUNDS_DIR=/usr/share/talkingarch/configs/releng/airootfs/usr/share/livecd-sound/sounds
 all: pick-a-card.wav beep.wav
 
 pick-a-card.wav:
