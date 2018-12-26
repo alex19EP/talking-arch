@@ -3,7 +3,7 @@ TalkingArch
 
 TalkingArch is a project to create an ArchLinux install CD for blind and visually impaired users. It is as close to the official Arch Linux install CD as possible, adding speech output via the Speakup screen reader and braille output via brltty.
 You can read about it on [this page](http://wiki.archlinux.org/index.php/TalkingArch) from the Arch Wiki.
-You can download the image from the [TalkingArch](http://talkingarch.tk/) website.
+You can download the image from the [release page](https://github.com/erik-pro/talkingarch/releases).
 If you just want a CD image, you can stop reading here!
 The rest of this document is only useful for those who want to build their own images.
 
@@ -19,25 +19,15 @@ I encourage you to read archiso's README before proceeding.  You can find that d
 /usr/share/doc/archiso/README.
 
 From here on, I'm going to assume that you have root privileges.  You need them to build the images.  Fire up a root shell, using your preferred method.
-
-The standard TalkingArch image contains brltty-minimal, a modified version of brltty with far fewer dependencies.
-The package is downloaded from a custom repo.
-The pacman.conf built into the TalkingArch configuration is already set up to download this package.
-You will, however, need to add and trust the key used to sign the repository database and the brltty-minimal package, or else the build process will fail.
-	pacman-key -r --keyserver pgp.mit.edu 75689861
-	pacman-key --edit-key 75689861
-Use the pacman-key --edit-key command above to edit the trust level for the key.
-You can trust-sign the key using Pacman's master key, and your image will build correctly.
-The TalkingArch configuration is found in /usr/share/talkingarch/configs/talking-inst.
-You can build your image right in that directory, if you're so inclined.
+The TalkingArch configuration is found in /usr/share/talkingarch/configs/releng.
+You can build your image         right in that directory, if you're so inclined.
 But I'd copy it somewhere else, far away from /usr/share.
 For this example, we're going to build in /root/tarch,
 so execute the following:
 	mkdir -p /root/tarch
-	cp -dR /usr/share/talkingarch/configs/talking-inst /root/tarch
-	cd /root/tarch/talking-inst
+	cp -dR /usr/share/talkingarch/configs/releng /root/tarch
+	cd /root/tarch/releng
 Now you can run ./build.sh.
-Running ./build.sh with no arguments will automatically build a dual-architecture iso image.
 	./build.sh -h
 will list some extra options that are available.
 Note that the generated image is suitable for either a CD or a USB stick.
@@ -49,7 +39,8 @@ Cloning
 
 You'll get a clone of the TalkingArch project when you build the talkingarch-git package from AUR.
 If you want to clone it manually, use the following:
-	git clone https://notabug.org/talkingarch/talkingarch.git
+	git clone https://github.com/erik-pro/talkingarch.git
+
 Miscellaneous Notes
 -------------------
 
