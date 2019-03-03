@@ -1,5 +1,7 @@
+alsa-utils
 arch-install-scripts
 b43-fwcutter
+brltty-minimal
 broadcom-wl
 btrfs-progs
 clonezilla
@@ -13,6 +15,7 @@ dnsmasq
 dnsutils
 dosfstools
 elinks
+espeakup
 ethtool
 exfat-utils
 f2fs-tools
@@ -63,6 +66,3 @@ wireless_tools
 wpa_actiond
 wvdial
 xl2tpd
-espeakup
-alsa-utils
-brltty
