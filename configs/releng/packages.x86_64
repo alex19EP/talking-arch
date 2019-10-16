@@ -9,7 +9,9 @@ crda
 darkhttpd
 ddrescue
 dhclient
+dhcpcd
 dialog
+diffutils
 dmraid
 dnsmasq
 dnsutils
@@ -30,12 +32,20 @@ ipw2100-fw
 ipw2200-fw
 irssi
 iwd
+jfsutils
 lftp
 linux-atm
+linux-firmware
 lsscsi
+lvm2
+man-db
+man-pages
 mc
+mdadm
 mtools
+nano
 ndisc6
+netctl
 nfs-utils
 nilfs-utils
 nmap
@@ -50,6 +60,7 @@ partimage
 ppp
 pptpclient
 refind-efi
+reiserfsprogs
 rp-pppoe
 rsync
 sdparm
@@ -59,6 +70,8 @@ sudo
 tcpdump
 testdisk
 usb_modeswitch
+usbutils
+vi
 vim-minimal
 vpnc
 wget
@@ -66,4 +79,5 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xfsprogs
 xl2tpd
