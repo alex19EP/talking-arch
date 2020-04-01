@@ -2,7 +2,7 @@
 
 TalkingArch is a project to create an ArchLinux install CD for blind and visually impaired users. It is as close to the official Arch Linux install CD as possible, adding speech output via the Speakup screen reader and braille output via brltty.
 You can read about it on [this page](http://wiki.archlinux.org/index.php/TalkingArch) from the Arch Wiki.
-You can download the image from the [release page](https://github.com/alex19EP/talkingarch/releases).
+You can download the image from the [release page](https://github.com/alex19EP/talking-arch/releases).
 If you just want a CD image, you can stop reading here!
 The rest of this document is only useful for those who want to build their own images.
 
@@ -19,8 +19,8 @@ For this example, we're going to build in /root/tarch,
 so execute the following:
 
 ~~~
-	git clone https://github.com/alex19EP/talkingarch.git
-	cd talkingarch
+	git clone https://github.com/alex19EP/talking-arch.git
+	cd talking-arch/configs/releng/
 ~~~
 
 Now you can run ./build.sh.
