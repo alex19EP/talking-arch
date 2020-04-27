@@ -1,12 +1,3 @@
-pcm.!default {
-	type plug
-	slave.pcm {
-		type hw
-		card %card%
-	}
-}
-
-ctl.!default {
-	type hw
-	card %card%
-}
+Defaults node
+defaults.ctl.card %card%;
+defaults.pcm.card %card%;
