@@ -1,8 +1,9 @@
 #!/bin/bash
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 # If there are multiple usable sound cards, prompt the user to choose one,
 # using auditory feedback.
-# This script is released under the GNU General Public License.
 
 source /usr/share/livecd-sound/functions
 

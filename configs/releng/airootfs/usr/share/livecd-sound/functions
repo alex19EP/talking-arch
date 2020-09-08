@@ -1,6 +1,7 @@
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 # Functions for setting up sound on the live CD.
-# This library is released under the GNU General Public License,
-# and it incorporates code from the /etc/init.d/alsa-utils included with
+# This library is incorporates code from the /etc/init.d/alsa-utils included with
 # Ubuntu 8.04.  Proper credit also goes to Debian.
 
 # Start code copied from Debian / Ubuntu:
@@ -65,7 +66,7 @@ sanify_levels_on_card()
 
 	unmute_and_set_level "Front" "80%"
 	unmute_and_set_level "Master" "80%"
-	unmute_and_set_level "Master Mono" "80%"  
+	unmute_and_set_level "Master Mono" "80%"
 	unmute_and_set_level "Master Digital" "80%"   # E.g., cs4237B
 	unmute_and_set_level "Playback" "80%"
 	unmute_and_set_level "Headphone" "100%"
@@ -81,7 +82,7 @@ sanify_levels_on_card()
 	mute_and_zero_level "Mic"
 	mute_and_zero_level "IEC958"         # Ubuntu #19648
 
-	# Intel P4P800-MX  
+	# Intel P4P800-MX
 	switch_control "Master Playback Switch" on
 	switch_control "Master Surround" on
 
@@ -106,7 +107,7 @@ sanify_levels_on_card()
 	#  valid values are 0, 1, 2, 3. Needs to be set to 0 for PCM1.
 	unmute_and_set_level "IEC958 Playback AC97-SPSA" "0"
 
-	# Required for newer Via hardware 
+	# Required for newer Via hardware
 	unmute_and_set_level "VIA DXS,0" "80%"
 	unmute_and_set_level "VIA DXS,1" "80%"
 	unmute_and_set_level "VIA DXS,2" "80%"
@@ -122,7 +123,7 @@ sanify_levels_on_card()
 	# switch_control "External Amplifier" on
 	switch_control "Audigy Analog/Digital Output Jack" on
 	switch_control "SB Live Analog/Digital Output Jack" on
-	
+
 	# D1984 -- Thinkpad T61/X61
 	switch_control "Speaker" on
 	switch_control "Headphone" on

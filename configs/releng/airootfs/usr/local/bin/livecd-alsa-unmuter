@@ -1,7 +1,8 @@
 #!/bin/bash
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 # Properly initialize the sound card so that we have audio at boot.
-# This script is released under the GNU General Public License.
 source /usr/share/livecd-sound/functions
 
 preinit_levels all

@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 started_flag=/run/speech-is-running
 if [ -f $started_flag ]; then
 	exit 0
