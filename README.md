@@ -1,5 +1,7 @@
 # TalkingArch
 
+**Note**: this project is [obsolete](https://www.archlinux.org/news/accessible-installation-medium/)
+
 TalkingArch is a project to create an ArchLinux install CD for blind and visually impaired users. It is as close to the official Arch Linux install CD as possible, adding speech output via the Speakup screen reader and braille output via brltty.
 You can read about it on [this page](http://wiki.archlinux.org/index.php/TalkingArch) from the Arch Wiki.
 You can download the image from the [release page](https://github.com/alex19EP/talking-arch/releases).
